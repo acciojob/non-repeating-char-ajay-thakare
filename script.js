@@ -7,11 +7,11 @@ function firstNonRepeatedChar(str) {
 	}
 
 	
-	 for (let [char, count] of map) {
-	    if (count === 1) {
-	      return char;
-	    }
-  }
+	 for(let ch of str){
+		 if(map.get(ch) === 1){
+			 return ch;
+		 }
+	 }
 	return null;
 }
 
